@@ -53,4 +53,19 @@ python collage_maker.py
   - Photo collages are created from the folder ``output``
   - If there are enough single images, the collage will be created again in the same folder
 
+## BibTeX
+
+Please cite this work using this BibTex entry:
+
+```
+@mastersthesis{dursun2022,
+    author     =     {Mustafa Dursun},
+    title      =     {Social Reporter – Entwicklung und Evaluation eines Lifelogging Systems für Hochschulen, um Bilder aus dem Alltag der Hochschule für soziale Medien zu erfassen},
+    school     =     {Herman-Hollerith-Zentrum, Fakultät Informatik, Hochschule Reutlingen},
+    address    =     {Alteburgstraße 150, 72762 Reutlingen, Germany},
+    month      =     {February},
+    year       =     {2022},
+}
+```
+
 
