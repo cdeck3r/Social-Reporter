@@ -53,7 +53,19 @@ python collage_maker.py
   - Photo collages are created from the folder ``output``
   - If there are enough single images, the collage will be created again in the same folder
 
-## BibTeX
+## Thesis
+
+This work is the result of Mustafa Dursun's thesis in the masters program [Digital Business Engineering](https://www.hhz.de/master/digital-business-engineering/) at the [Herman Hollerith Center](https://www.hhz.de/) in Böblingen. 
+
+### Abstract
+
+Reporting on social media about the daily life of a university involves a lot of organizational effort, because the content is created in manual activity. For the generation of images from the daily lecture routine, the lectures are interrupted and the writing of a corresponding text is a time-consuming activity that has to be carried out afterwards. 
+
+The concept of lifelogging promises to assist in the editorial work of a university by collecting images during lecture events for publication. Lifelogging is understood as the digital recording of the various forms of everyday life. In the context of this thesis a design space of such a system is investigated, which recognizes relevant image content with as little human interaction as possible and generates appropriate texts for it. The developed software solution is a prototype that serves to extend smart environments of an event space. 
+
+First, an overview of the various existing lifelogging approaches is provided and these are compared with the solution proposed in this thesis. Subsequently, the prototype is presented and evaluated.
+
+### BibTeX
 
 Please cite this work using this BibTex entry:
 
