@@ -1,0 +1,42 @@
+services:
+    sr:
+        image: sr
+        container_name: sr
+        entrypoint: bash
+        volumes:
+          - repo:/Social-ReporterRepo
+          - app:${APP_ROOT}
+          - input:${APP_ROOT}/input
+          - output:${APP_ROOT}/output
+        stdin_open: true
+        tty: true
+        
+
+#
+# Volume definition
+# 
+volumes:
+  repo:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${VOL_DIR}/
+      o: bind
+  app:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${VOL_DIR}/Social-Reporter
+      o: bind
+  input:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${VOL_DIR}/input
+      o: bind
+  output:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${VOL_DIR}/output
+      o: bind

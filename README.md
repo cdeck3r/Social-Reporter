@@ -1,7 +1,11 @@
 # SocialReporter
-As a master thesis a system was developed, which recognizes the interesting moments in events of the university, in order to post it in the social media.
+
+As a result of a [master thesis](#thesis), this system recognizes the interesting moments from images taken in lectures at a university. The goal is to automatically select  interesting images from automated cameras distributed in the lecture hall, which finally may serve as posts in social media networks.
+
+The software controlling the distributed camera system can be found at https://github.com/cdeck3r/INCAS.
 
 ## Requirements
+
 It is recommended to use following versions: 
 
 ```
@@ -11,6 +15,9 @@ pip=21.1.2
 
 
 ## How to setup
+
+This setup works on Windows machines. For using the [software in a docker container](#how-image) please read the section below.
+
 - All required packages are summarized in requirements.txt. Install all these packages: 
 ``
 pip -r requirements.txt
@@ -52,6 +59,35 @@ python collage_maker.py
 ``
   - Photo collages are created from the folder ``output``
   - If there are enough single images, the collage will be created again in the same folder
+
+## Docker Image
+
+The original `dockerfile` for this project was created by @VanakiWahid.
+
+After cloning the repo, setup the project's root dir and create a `.env` file with the content shown below.
+
+```
+# .env file
+
+# In the container, this is the directory where the code is found
+# Example:
+APP_ROOT=/Social-Reporter
+
+# the HOST directory containing directories to be mounted into containers
+# Example:
+VOL_DIR=/dev/Social-Reporter
+```
+
+Create docker image, spin up the container `sr` and get a bash shell.
+
+```
+docker build -t sr .
+ocker-compose up -d sr
+docker exec -it sr /bin/bash
+```
+
+Start the app [as above](#how-to-setup), but beforehand change directory to `/app/Social-Reporter`. Call the `python3` interpreter for `social_reporter.py` and `collage_maker.py`.  
+
 
 ## Thesis
 
