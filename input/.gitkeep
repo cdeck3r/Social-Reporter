@@ -10,7 +10,7 @@ output/*
 Tesseract-OCR/*
 !.vscode/launch.json
 .git-versioned-pom.xml
-!input/.gitkeep
+
 
 # Created by https://www.toptal.com/developers/gitignore/api/python
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
