@@ -33,6 +33,10 @@ def main():
         print("iteration: " + str(iteration))
 
         frame = cv2.imread(config.input_dir + "/" + framename)
+        if frame is None:
+            print("{} skipped".format(framename))
+            continue
+            
         #collect infos
         frame, emotions, face_boxes = config.emotion_model.recognise_emotion(frame)
         person_boxes, env_boxes, person_labels, env_labels, confs = cvlib.detect_common_objects(frame, confidence=.75)
