@@ -1,8 +1,12 @@
-# SocialReporter
+# Social Reporter
 
-As a result of a [master thesis](#thesis), this system recognizes the interesting moments from images taken in lectures at a university. The goal is to automatically select  interesting images from automated cameras distributed in the lecture hall, which finally may serve as posts in social media networks.
+The Social Reporter is AI based image selection and composition system for generating social media content about lectures.
 
-The software controlling the distributed camera system can be found at https://github.com/cdeck3r/INCAS.
+The conceptional idea of this project is to have some virtual assisstant observing a lecture and reporting about it on social media. The role of the Social Reporter is to provide the image material from within the lecture. 
+
+As a software system, the Social Reporter recognizes interesting moments from images taken during lectures at a university. The goal is to automatically select social-media relevant images taken from automated cameras distributed in the lecture hall. 
+
+The research on image analysis for social media content and the prototype implementation are the result of the [master thesis](#thesis) by Mustafa Dursun created at the HHZ within the [Digital Business Engineering](https://www.hhz.de/master/digital-business-engineering/) master's degree program. Information and software about the distributed camera system can be found at https://github.com/cdeck3r/INCAS.
 
 ## Requirements
 
@@ -93,12 +97,11 @@ Start the app [as above](#how-to-setup), but beforehand change directory to `/ap
 
 This work is the result of Mustafa Dursun's thesis in the masters program [Digital Business Engineering](https://www.hhz.de/master/digital-business-engineering/) at the [Herman Hollerith Center](https://www.hhz.de/) in Böblingen. 
 
-### Abstract
+### Thesis Abstract
 
 Reporting on social media about the daily life of a university involves a lot of organizational effort, because the content is created in manual activity. For the generation of images from the daily lecture routine, the lectures are interrupted and the writing of a corresponding text is a time-consuming activity that has to be carried out afterwards. 
 
 The concept of lifelogging promises to assist in the editorial work of a university by collecting images during lecture events for publication. Lifelogging is understood as the digital recording of the various forms of everyday life. In the context of this thesis a design space of such a system is investigated, which recognizes relevant image content with as little human interaction as possible and generates appropriate texts for it. The developed software solution is a prototype that serves to extend smart environments of an event space. 
-
 First, an overview of the various existing lifelogging approaches is provided and these are compared with the solution proposed in this thesis. Subsequently, the prototype is presented and evaluated.
 
 ### BibTeX
