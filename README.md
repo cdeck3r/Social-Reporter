@@ -22,10 +22,8 @@ pip=21.1.2
 
 This setup works on Windows machines. For using the [software in a docker container](#how-image) please read the section below.
 
-- All required packages are summarized in requirements.txt. Install all these packages: 
-``
-pip -r requirements.txt
-``
+- ~~All required packages are summarized in requirements.txt. Install all these packages: `pip -r requirements.txt`~~
+- Install python packages from `required_packages.txt` one by one using `pip install <package name>`
 - Folder adapted_python_libs contains two modified Python classes (object_detection.py and facial_emotion_recognition.py). 
 The just installed classes must be overwritten with these.
   1. Navigate to the install location of object_detection.py. This should be in: 
